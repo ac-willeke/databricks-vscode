@@ -1,0 +1,19 @@
+# This is a Databricks asset bundle definition for tutorial.
+# The Databricks extension requires databricks.yml configuration file.
+# See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
+
+bundle:
+  name: tutorial
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://xxxxxxx.x.azuredatabricks.net
+
+  prod:
+      mode: production
+      default: false
+      workspace:
+        host: https://xxxxxxx.x.azuredatabricks.net
