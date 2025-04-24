@@ -3,11 +3,11 @@
 # Define schema and data
 import pandas as pd
 
-columns = ['CustomerID', 'FirstName', 'LastName']
+columns = ["CustomerID", "FirstName", "LastName"]
 data = [
-    [1000, 'Mathijs', 'Oosterhout-Rijntjes'],
-    [1001, 'Joost', 'van Brunswijk'],
-    [1002, 'Stan', 'Bokenkamp']
+    [1000, "Mathijs", "Oosterhout-Rijntjes"],
+    [1001, "Joost", "van Brunswijk"],
+    [1002, "Stan", "Bokenkamp"],
 ]
 
 # Create a pandas DataFrame

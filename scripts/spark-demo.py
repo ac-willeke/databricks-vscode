@@ -6,16 +6,18 @@ from pyspark.sql.types import *
 # Create a remote Databricks session
 spark = DatabricksSession.builder.getOrCreate()
 
-schema = StructType([
-   StructField('CustomerID', IntegerType(), False),
-   StructField('FirstName',  StringType(),  False),
-   StructField('LastName',   StringType(),  False)
-])
+schema = StructType(
+    [
+        StructField("CustomerID", IntegerType(), False),
+        StructField("FirstName", StringType(), False),
+        StructField("LastName", StringType(), False),
+    ]
+)
 
 data = [
-   [ 1000, 'Mathijs', 'Oosterhout-Rijntjes' ],
-   [ 1001, 'Joost',   'van Brunswijk' ],
-   [ 1002, 'Stan',    'Bokenkamp' ]
+    [1000, "Mathijs", "Oosterhout-Rijntjes"],
+    [1001, "Joost", "van Brunswijk"],
+    [1002, "Stan", "Bokenkamp"],
 ]
 
 customers = spark.createDataFrame(data, schema)
