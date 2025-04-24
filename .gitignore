@@ -1,0 +1,6 @@
+# .gitignore
+.databricks
+.vscode
+databricks.yml
+**/local
+
