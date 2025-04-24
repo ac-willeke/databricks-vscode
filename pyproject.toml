@@ -1,0 +1,19 @@
+[project]
+name = "databricks"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "databricks-connect==15.4.8",
+    "databricks-sdk[notebook]>=0.50.0",
+    "nbformat>=5.10.4",
+    "pandas>=2.2.3",
+    "pip>=25.0.1",
+    "pyspark>=3.5.5",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
